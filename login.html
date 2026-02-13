@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="login.js"></script>
+</head>
+<body>
+    <div id="menuBox">
+        <svg  xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#434343"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <div id="menu">
+            <div class="menuElement" id="contact">contact</div>
+            <div class="menuElement" id="theme">
+                <label for="themeBtn">
+                    Dark theme
+                </label>
+                <div id="themeBtn">
+                    <div id="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div id="logoBox">
+            <!-- <img type="png" src="pics/logo.png" id="logo"> -->
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" fill="#000000" width="80px" height="80px" viewBox="0 0 32 32" version="1.1">
+            <title>knife</title>
+            <path d="M14.602 8.359l-0.038 0.035c-1.901-3.271-4.319-6.121-8.149-7.88-1.343-0.617-2.362 0.405-2.901 1.604-2.115 4.712 5.305-0.097 9.173 7.971l-0.015 0.014c-0.286 2.044-3.088 4.117-5.614 4.197 4.852 11.568 16.029 19.916 23.853 14.892-10.284-3.519-12.077-13.181-16.308-20.832z"/>
+            </svg>
+        </div>
+        <div id="titleBox">
+            <h1 id="title">welcome to fogring community</h1>
+        </div>
+    </header>
+    <h1 id="signUp">login</h1>
+    <main>
+        <div id="formBox">
+            <form action="/submit" id="form">
+                <div class="inputsBox" >
+                    <!-- <div class="errors" id="usernameError"></div> -->
+                    <label for="username" id="usernameLabel" class="labels">username</label>
+                    <input type="text" name="username" placeholder="username" id="username" class="inputs" >
+                </div>
+                <div class="inputsBox">
+                    <!-- <div class="errors" id="passwordError"></div> -->
+                    <label for="password" id="passwordLabel" class="labels">password</label>
+                    <input type="password" name="email" placeholder="password" id="password" class="inputs" >
+                </div>
+                <button type="submit" id="submitBtn">login</button>
+            </form>
+        </div>
+    </main>
+    <div id="errorBox"></div>
+    <div id="login">new here? <a href="index.html" id="loginLink">sign up</a></div>
+    <div id="other">
+        <hr>
+        <div id="OR">or</div>
+    </div>
+    <div id="iconsBox">
+        <div class="icons" id="google">
+            <a href=""></a>
+            <img src="pics/googleIcon.png" title="google" >
+        </div>
+        <div class="icons" id="facebook">
+            <a href=""></a>
+            <img src="pics/facebookIcon.png" title="google">
+        </div>
+        <div class="icons" id="twitter">
+            <a href=""></a>
+            <img src="pics/twitterIcon.png" title="google">
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

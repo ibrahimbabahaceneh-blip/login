@@ -1,0 +1,229 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Montserrat;
+    transition: border-color 200ms, color 300ms, background-color 400ms;
+}
+body{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 20px;
+    position: relative;
+}
+#menuBox{
+    position: absolute;
+    width: 20px;
+    margin: 10px;
+    aspect-ratio: 1;
+    border: none;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu{
+    position: absolute;
+    border: 1px solid;
+    border-radius: 5px;
+    top: 100%;
+    right: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(190, 190, 190, 0.566);
+    font-size: 70%;
+    min-width: 120px;
+    padding: 3px 10px;
+    padding-right: 0;
+    visibility: hidden;
+}
+.menuElement{
+    margin-block: 2px;
+}
+#theme{
+    display: flex;
+    border: none;
+    gap: 10px
+}
+#themeBtn{
+    width: 22px;
+    height: 14px;
+    border: 1px solid;
+    border-radius: 6.5px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    padding-inline: 2px;
+}
+#circle{
+    width: 50%;
+    aspect-ratio: 1;
+    border: 1px solid;
+    border-radius: 50%;
+    transition: transform 200ms;
+}
+header{
+    width: 100%;
+    height: 30%;
+    border: none;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+main{
+    width: min(350px, 80%);
+    height: fit-content;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 1em;
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color inset; */
+    box-shadow: 2px 2px 30px 1px rgb(150, 150, 150);
+}
+#logoBox{
+    height: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    border: none;
+    padding: 0;
+    margin: 0;
+    height: 13vh;
+    fill: black;
+    transition: fill 1200ms;
+}
+#titleBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    font-size: 8vw;
+    text-align: center;
+}
+#signUp{
+    margin-block: 15px;
+}
+.inputsBox{
+    position: relative;
+    width: fit-content;
+    margin-block: 7px;
+}
+.inputs{
+    height: 13vw;
+    width: 70vw;
+    padding-left: 5px;
+    border: 2px solid lightgray;
+    border-radius: 1em;
+    font-weight: 500;
+    font-size: 4vw;
+    transition: border-Color 200ms, transform 200ms, background-color 400ms;
+}
+.inputs:focus{
+    outline: none;
+    transform: scale(1.02, 1.02);
+}
+.labels{
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    font-size: 3.5vw;
+    background-color: white;
+    padding-inline: 5px;
+    font-weight: bold;
+    z-index: 1;
+}
+#submitBtn{
+    width: 70vw;
+    height: 8vw;
+    border-radius: 1em;
+    border: none;
+    margin-top: 5px;
+    background-color: rgba(50, 218, 50, 0.702);
+    font-weight: 500;
+    padding-inline: 5px;
+}
+.errors{
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 10px;
+    border-radius: 10px;
+    min-width: 90%;
+    min-height: 100%;
+    background-color: rgba(255, 40, 40, 0.529);
+    visibility: hidden;
+    font-size: 4vw;
+    padding: 10px;
+    text-align: center;
+    color: rgb(69, 69, 69);
+}
+#errorBox{
+    width: 75%;
+    height: fit-content;
+    border-radius: 1em;
+    background-color: rgba(236, 54, 54, 0.67);
+    visibility: hidden;
+    padding: 7px 12px;
+    color: rgb(48, 48, 48);
+    font-size: 4vw;
+}
+#login{
+    border: none ;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#other{
+    position: relative;
+    width: 100%;
+}
+#OR{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding-inline: 5px;
+    width: fit-content;
+    background-color: white;
+    font-weight: 600;
+}
+.icons img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    padding: 2px;
+}
+#iconsBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    padding-block: 10px;
+}
+.icons{
+    transition: transform 200ms;
+}
+.icons:active{
+    transform: scale(1.15, 1.15);
+}
+.menuElement:focus{
+    text-decoration: underline;
+}
