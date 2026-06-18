@@ -10,7 +10,7 @@ const errorsBox = document.getElementById("errorBox")
 let usernameWrong = false
 let passwordWrong = false
 let darkMode = false
-// testing git
+// testing git 2
 
 function usernameErrorDisplay(){
     username.style.borderColor = "red"
